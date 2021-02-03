@@ -10,45 +10,7 @@
   <link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet">
-  <script>
-    var ashTab = document.querySelector('#ash');
-    var kepTab = document.querySelector('#kep');
-    var stabTab = document.querySelector('#stab');
-
-    var ashRef = document.querySelector('#ashref');
-    var kepRef = document.querySelector('#kepref');
-    var stabRef = document.querySelector('#stabref');
-
-    if (ashTab) ashTab.addEventListener('click', () => view_ash());
-    if (kepTab) kepTab.addEventListener('click', () => view_kep());
-    if (stabTab) stabTab.addEventListener('click', () => view_stab());
-
-
-    function view_ash() {
-      ashTab.style.backgroundColor = '#8652fc';
-      kepTab.style.backgroundColor = '#88bdff';
-      stabTab.style.backgroundColor = '#88bdff';
-      ashRef.style.display = 'block';
-      kepRef.style.display = 'none';
-      stabRef.style.display = 'none';
-    };
-    function view_kep() {
-      ashTab.style.backgroundColor = '#88bdff';
-      kepTab.style.backgroundColor = '#8652fc';
-      stabTab.style.backgroundColor = '#88bdff';
-      ashRef.style.display = 'none';
-      kepRef.style.display = 'block';
-      stabRef.style.display = 'none';
-    };
-    function view_stab() {
-      ashTab.style.backgroundColor = '#88bdff';
-      kepTab.style.backgroundColor = '#88bdff';
-      stabTab.style.backgroundColor = '#8652fc';
-      ashRef.style.display = 'none';
-      kepRef.style.display = 'none';
-      stabRef.style.display = 'block';
-    };
-  </script>
+  
  <style>
    body {
     background: #272727;
@@ -347,4 +309,44 @@
 
 </p>
 </body>
+
+<script>
+    var ashTab = document.querySelector('#ash');
+    var kepTab = document.querySelector('#kep');
+    var stabTab = document.querySelector('#stab');
+
+    var ashRef = document.querySelector('#ashref');
+    var kepRef = document.querySelector('#kepref');
+    var stabRef = document.querySelector('#stabref');
+
+    if (ashTab) ashTab.addEventListener('click', () => view_ash());
+    if (kepTab) kepTab.addEventListener('click', () => view_kep());
+    if (stabTab) stabTab.addEventListener('click', () => view_stab());
+
+
+    function view_ash() {
+      ashTab.style.backgroundColor = '#8652fc';
+      kepTab.style.backgroundColor = '#88bdff';
+      stabTab.style.backgroundColor = '#88bdff';
+      ashRef.style.display = 'block';
+      kepRef.style.display = 'none';
+      stabRef.style.display = 'none';
+    };
+    function view_kep() {
+      ashTab.style.backgroundColor = '#88bdff';
+      kepTab.style.backgroundColor = '#8652fc';
+      stabTab.style.backgroundColor = '#88bdff';
+      ashRef.style.display = 'none';
+      kepRef.style.display = 'block';
+      stabRef.style.display = 'none';
+    };
+    function view_stab() {
+      ashTab.style.backgroundColor = '#88bdff';
+      kepTab.style.backgroundColor = '#88bdff';
+      stabTab.style.backgroundColor = '#8652fc';
+      ashRef.style.display = 'none';
+      kepRef.style.display = 'none';
+      stabRef.style.display = 'block';
+    };
+  </script>
 </html>
